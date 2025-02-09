@@ -1,9 +1,11 @@
 /* About.css */
 #about {
   padding: 60px 20px;
-  background-color: var(--black-grey); /* #3a3739 */
+  background-color: var(--white); /* White background for the section */
   text-align: center;
-  color: var(--white); /* Ensure text is readable */
+  color: var(--black-grey); /* Ensure text is readable */
+  border: 2px solid var(--black-grey); /* Border around the section */
+  border-radius: 10px; /* Optional: Rounded corners for the border */
 }
 
 #about h2 {
@@ -16,7 +18,7 @@
   font-size: 18px;
   max-width: 800px;
   margin: 0 auto 40px;
-  color: var(--white); /* Text remains legible */
+  color: var(--black-grey); /* Text remains legible */
 }
 
 #about h3 {
@@ -25,19 +27,36 @@
   color: var(--blue); /* Secondary heading color */
 }
 
-#about .team-member {
-  display: inline-block;
-  margin: 20px;
+#about .team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 250px;
-  background-color: var(--white); /* Card background */
+  background-color: var(--black-grey); /* Card background */
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid var(--blue); /* Border around each team member card */
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(244, 238, 238, 0.15);
 }
 
 .team-member img {
   width: 100%;
+  height: auto;
   border-radius: 50%;
   border: 3px solid var(--rose); /* Accent border */
 }
@@ -64,5 +83,23 @@
 
   .team-member h4 {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #about h2 {
+    font-size: 24px;
+  }
+
+  #about p {
+    font-size: 14px;
+  }
+
+  .team-member {
+    width: 90%;
+  }
+
+  .team-member h4 {
+    font-size: 14px;
   }
 }

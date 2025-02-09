@@ -10,11 +10,14 @@ footer ul {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap; /* Ensures the items wrap on smaller screens */
+  margin-bottom: 20px;
 }
 
 footer ul li a {
   color: var(--white); /* White text for links */
   font-size: 18px;
+  text-decoration: none; /* Remove underline from links */
 }
 
 footer ul li a:hover {
@@ -25,8 +28,34 @@ footer .social-icons a {
   margin: 0 10px;
   color: var(--white); /* White social icon color */
   font-size: 20px;
+  text-decoration: none; /* Remove underline from social links */
 }
 
 footer .social-icons a:hover {
   color: var(--rose); /* Rose color for hover effect on icons */
+}
+
+@media (max-width: 768px) {
+  footer ul {
+    flex-direction: column; /* Stack the footer links vertically on small screens */
+    gap: 15px;
+  }
+
+  footer ul li a {
+    font-size: 16px; /* Slightly smaller font size for links on mobile */
+  }
+
+  footer .social-icons a {
+    font-size: 18px; /* Adjust social icon size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  footer ul li a {
+    font-size: 14px; /* Smaller font size for very small screens */
+  }
+
+  footer .social-icons a {
+    font-size: 16px; /* Adjust social icon size further on very small screens */
+  }
 }
