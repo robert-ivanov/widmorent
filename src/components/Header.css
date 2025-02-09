@@ -1,0 +1,45 @@
+/* Header.css */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #232363; /* Adds a border below the header */
+}
+
+header .logo img {
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #232363;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #ef1166;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+}

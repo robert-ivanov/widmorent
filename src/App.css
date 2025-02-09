@@ -1,0 +1,30 @@
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white); /* White background for the app */
+  color: var(--black-grey); /* Default text color */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent; /* No background by default */
+  border: none; /* No border */
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,71 @@
+/* CaseStudies.css */
+#case-studies {
+  padding: 60px 20px;
+  background-color: var(--black-grey); /* #3a3739 */
+  text-align: center;
+  color: var(--white); /* Ensure text is readable against the dark background */
+}
+
+#case-studies h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: var(--rose); /* Accent color for headings */
+}
+
+.case-study {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: var(--white); /* Card background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 800px;
+  margin: 20px auto; /* Center case studies */
+  text-align: left;
+}
+
+.case-study h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--blue); /* Accent subheading color */
+}
+
+.case-study h4 {
+  font-size: 18px;
+  margin-top: 20px;
+  color: var(--blue); /* Accent color for sections */
+}
+
+.case-study p {
+  font-size: 16px;
+  line-height: 1.6; /* Improve readability */
+  color: var(--black-grey);
+}
+
+.case-study ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.case-study ul li {
+  font-size: 16px;
+  color: var(--black-grey);
+}
+
+@media (max-width: 768px) {
+  #case-studies h2 {
+    font-size: 28px;
+  }
+
+  .case-study {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .case-study h3 {
+    font-size: 20px;
+  }
+
+  .case-study h4 {
+    font-size: 16px;
+  }
+}

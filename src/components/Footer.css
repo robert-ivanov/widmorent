@@ -1,0 +1,32 @@
+/* Footer.css */
+footer {
+  padding: 20px;
+  background-color: var(--black-grey); /* Black grey background for footer */
+  color: var(--white); /* White text for readability */
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer ul li a {
+  color: var(--white); /* White text for links */
+  font-size: 18px;
+}
+
+footer ul li a:hover {
+  color: var(--rose); /* Rose color for hover effect */
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: var(--white); /* White social icon color */
+  font-size: 20px;
+}
+
+footer .social-icons a:hover {
+  color: var(--rose); /* Rose color for hover effect on icons */
+}

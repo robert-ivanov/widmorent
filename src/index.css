@@ -1,0 +1,88 @@
+
+/* Global Styles */
+:root {
+  --black-grey: #3a3739;
+  --blue: #232363;
+  --rose: #ef1166;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: var(--black-grey);
+  background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--blue);
+}
+
+a {
+  text-decoration: none;
+  color: var(--rose);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--blue);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--rose);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--blue);
+}
+
+/* Section Specific Styles */
+header {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--black-grey);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.hero {
+  background: var(--black-grey);
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  color: var(--rose);
+}
+
+.services, .features, .case-studies, .blog, .about {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--black-grey);
+}
+
+.Contact {
+  background-color: var(--rose);
+  color: var(--white);
+  padding: 40px 20px;
+  text-align: center;
+}

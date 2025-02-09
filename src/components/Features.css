@@ -1,0 +1,53 @@
+/* Features.css */
+#features {
+  padding: 60px 20px;
+  background-color: var(--white); /* White background */
+  text-align: center;
+}
+
+#features h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: var(--blue); /* Blue color for the heading */
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feature {
+  width: 300px;
+  text-align: center;
+  background-color: var(--black-grey); /* Black grey background for each feature */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--rose); /* Rose color for feature title */
+}
+
+.feature p {
+  font-size: 16px;
+  color: var(--white); /* White text for readability */
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .feature {
+    width: 80%;
+  }
+
+  #features h2 {
+    font-size: 28px;
+  }
+}
