@@ -32,11 +32,13 @@ form select {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Ensures consistent box model */
 }
+
 form select {
   appearance: none; /* Removes browser-specific dropdown styling */
   -webkit-appearance: none; /* For Safari */
   -moz-appearance: none; /* For Firefox */
 }
+
 form textarea {
   height: 150px; /* Ensure sufficient space for text area */
   resize: none; /* Keep uniform appearance */
@@ -61,11 +63,13 @@ form button:hover {
   background-color: #d10c55; /* Slightly darker rose for hover */
   transform: translateY(-2px); /* Hover lift effect */
 }
-form select::-ms-expand {
-  display: none; /* Hides dropdown arrow in IE */
-}
+
 form button:active {
   transform: translateY(0); /* Reset on click */
+}
+
+form select::-ms-expand {
+  display: none; /* Hides dropdown arrow in IE */
 }
 
 .contact-details {
@@ -143,6 +147,7 @@ form button:active {
 .popup button:hover {
   background-color: #d80d5a; /* Slightly darker rose for hover */
 }
+
 .popup-overlay .popup {
   animation: fadeIn 0.3s ease;
 }
@@ -171,5 +176,34 @@ form button:active {
 
   .contact-details .social-icons a {
     font-size: 18px;
+  }
+
+  .contact-details .address {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact h2 {
+    font-size: 28px;
+  }
+
+  form input,
+  form textarea,
+  form select,
+  form button {
+    width: 95%;
+  }
+
+  .contact-details {
+    font-size: 14px;
+  }
+
+  .contact-details .social-icons a {
+    font-size: 16px;
+  }
+
+  .contact-details .address {
+    font-size: 12px;
   }
 }

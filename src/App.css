@@ -5,26 +5,47 @@
   padding: 0;
   background-color: var(--white); /* White background for the app */
   color: var(--black-grey); /* Default text color */
+  min-height: 100vh; /* Ensure full height of the app on all screens */
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+a:hover {
+  color: var(--rose); /* Rose color on hover for links */
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0; /* Remove default margin for better alignment */
 }
 
 button {
   cursor: pointer;
   background-color: transparent; /* No background by default */
   border: none; /* No border */
+  transition: background-color 0.3s ease; /* Smooth transition on button hover */
+}
+
+button:hover {
+  background-color: var(--black-grey); /* Slight background change on hover for button */
 }
 
 @media (max-width: 768px) {
   .App {
     padding: 10px;
+  }
+
+  /* Ensure elements are responsive and properly spaced on mobile */
+  a {
+    font-size: 16px; /* Adjust link size on mobile */
+  }
+
+  button {
+    font-size: 14px; /* Adjust button font size for better readability */
   }
 }

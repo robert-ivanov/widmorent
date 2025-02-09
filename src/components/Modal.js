@@ -1,13 +1,15 @@
 import React from 'react';
-import './Modal.css'; // Add styles for modal
+import './Modal.css'; // Add your styles for modal
 
 const Modal = ({ isOpen, onClose, content }) => {
-  if (!isOpen) return null;
+  if (!isOpen) return null; // If not open, don't render the modal
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <button className="close-button" onClick={onClose}>X</button>
+    <div className="modal-overlay">
+      <div className="modal-content">
+        <button className="close-button" onClick={onClose}>
+          &times; {/* Close button */}
+        </button>
         <div>{content}</div>
       </div>
     </div>

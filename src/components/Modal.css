@@ -1,54 +1,53 @@
-/* Modal.css */
+/* Modal overlay */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .modal-content {
-    background-color: var(--white); /* White background for modal */
-    color: var(--black-grey); /* Dark text color */
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 600px;
-    width: 90%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    overflow-y: auto;
-  }
-  
-  .modal-content h3 {
-    font-size: 24px;
-    color: var(--blue); /* Accent color for headings */
-    margin-bottom: 20px;
-  }
-  
-  .modal-content p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  .modal-close {
-    background-color: var(--rose); /* Rose background for close button */
-    color: var(--white); /* White text for close button */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    display: inline-block;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .modal-close:hover {
-    background-color: var(--blue); /* Blue background on hover */
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with some opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: var(--white); /* White background for the modal */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: var(--black-grey); /* Close button in black-grey */
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: var(--rose); /* Close button turns rose on hover */
+}
+
+/* Content inside modal */
+.modal-content h3 {
+  font-size: 24px;
+  color: var(--blue); /* Heading in blue */
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 16px;
+  color: var(--black-grey); /* Text in black-grey */
+  line-height: 1.6;
+}

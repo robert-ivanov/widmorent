@@ -15,6 +15,7 @@
   display: flex;
   justify-content: center;
   gap: 40px;
+  flex-wrap: wrap; /* Ensures elements wrap on smaller screens */
 }
 
 .feature {
@@ -24,6 +25,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--white); /* White text for readability */
 }
 
 .feature h3 {
@@ -34,7 +36,6 @@
 
 .feature p {
   font-size: 16px;
-  color: var(--white); /* White text for readability */
 }
 
 @media (max-width: 768px) {
@@ -45,9 +46,20 @@
 
   .feature {
     width: 80%;
+    margin: 0 auto; /* Center the features on smaller screens */
   }
 
   #features h2 {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  #features h2 {
+    font-size: 24px;
+  }
+
+  .feature {
+    width: 90%; /* Further reduce the feature width on very small screens */
   }
 }

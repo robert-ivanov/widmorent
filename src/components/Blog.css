@@ -22,6 +22,12 @@
   text-align: left; /* Align articles for readability */
   max-width: 800px;
   margin: 20px auto; /* Center the articles */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .article h3 {
@@ -47,5 +53,27 @@
 
   .article p {
     font-size: 14px;
+  }
+
+  .article {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #blog h2 {
+    font-size: 24px;
+  }
+
+  .article h3 {
+    font-size: 18px;
+  }
+
+  .article p {
+    font-size: 12px;
+  }
+
+  .article {
+    padding: 10px;
   }
 }

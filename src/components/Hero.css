@@ -4,9 +4,9 @@
   justify-content: center;
   align-items: center;
   background: 
-    linear-gradient(to bottom, #232363, #ef1166),
+    linear-gradient(to bottom, var(--blue), var(--rose)), 
     url('//widmorlogo.png') no-repeat center center / cover;
-  height: 100vh;
+  height: 80vh; /* Reduce height for smaller appearance */
   color: var(--white); /* White text for readability */
   text-align: center;
   position: relative;
@@ -21,21 +21,22 @@
 }
 
 .hero-content {
-  max-width: 700px;
-  padding: 20px;
+  max-width: 600px; /* Reduce width for a smaller focus area */
+  padding: 15px; /* Adjust padding for compact design */
+  z-index: 2; /* Ensure content is above background overlay */
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Reduce font size */
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Compact spacing */
   color: var(--white); /* White color for main heading */
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  font-size: 1rem; /* Slightly smaller paragraph text */
+  margin-bottom: 20px; /* Compact spacing */
   opacity: 0.9;
   color: var(--white); /* White color for paragraph text */
 }
@@ -43,12 +44,12 @@
 .cta-buttons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px; /* Reduce gap between buttons */
 }
 
 .btn {
-  padding: 12px 25px;
-  font-size: 1rem;
+  padding: 10px 20px; /* Compact button size */
+  font-size: 0.9rem; /* Smaller font size */
   font-weight: bold;
   border-radius: 50px;
   text-decoration: none;
@@ -68,7 +69,7 @@
 }
 
 .btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px); /* Subtle hover animation */
 }
 
 .btn.primary:hover {
@@ -82,19 +83,38 @@
 
 @media (max-width: 768px) {
   #hero {
-    height: 90vh;
+    height: 70vh; /* Smaller height for mobile screens */
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Reduce heading size for tablets */
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Adjust paragraph font size */
   }
 
   .btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 8px 15px; /* Smaller button size */
+    font-size: 0.8rem; /* Smaller font size for buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .hero-content p {
+    font-size: 0.8rem; /* Adjust paragraph font size */
+  }
+
+  .cta-buttons {
+    flex-direction: column; /* Stack buttons for ultra-mobile screens */
+    gap: 8px; /* Reduce gap */
   }
 }
